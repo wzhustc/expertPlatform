@@ -160,7 +160,6 @@ public class CompanyController {
 		}
 		int page = Integer.parseInt(pageStr) ;
 		
-		
 		List<Company> companyList = companyService.selectCompanyListByPage(page);
 		
 		ModelAndView modelAndView = new ModelAndView();
@@ -168,6 +167,7 @@ public class CompanyController {
 		modelAndView.setViewName("company-list.jsp");
 		return modelAndView;	
 	}
+	
 	@RequestMapping("/selectCompanyLikeName")
 	public ModelAndView selectCompanyLikeName(HttpServletRequest request) throws Exception {
 		
@@ -181,6 +181,7 @@ public class CompanyController {
 		modelAndView.setViewName("company-list.jsp");
 		return modelAndView;	
 	}
+	
 	@RequestMapping("/selectCompanyLikeField")
 	public ModelAndView selectCompanyLikeField(HttpServletRequest request) throws Exception {
 		
@@ -215,13 +216,13 @@ public class CompanyController {
 		messageObj.setRecept(eIdStr);
 		messageObj.setSenddate(new Date());
 
-
 		messageService.messageCompanyToExpert(messageObj);
-        ModelAndView modelAndView = new ModelAndView();
+       
+		ModelAndView modelAndView = new ModelAndView();
 		
 		modelAndView.setViewName("initExpertList.action");
-		return modelAndView;	
 		
+		return modelAndView;	
 	}
 	
 	@RequestMapping("/updateCompanyInfo")
@@ -230,7 +231,6 @@ public class CompanyController {
 		String idStr = request.getParameter("id");
 		Integer id = Integer.parseInt(idStr);
 	
-		System.out.println(id);
 		String username = request.getParameter("username");
 		String realName = request.getParameter("realname");
 		String mobile = request.getParameter("mobile");
@@ -255,15 +255,12 @@ public class CompanyController {
 		company.setAddition(addition);
 		company.setAccount(0.0);
 		
-		String result = companyService.updateCompany(company);
+		companyService.updateCompany(company);
 		
-		//定义一个返回用的modelAndView
 		ModelAndView modelAndView = new ModelAndView();
 		
-		//将company信息放到modelAndView
 		modelAndView.addObject("company", company);
 		
-		//设置返回的页面
 		modelAndView.setViewName("/company-profile.jsp");
 		
 		return modelAndView;
