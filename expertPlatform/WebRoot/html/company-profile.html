@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>company-profile</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/icomoon-social.css">
+       
+        <link rel="stylesheet" href="css/leaflet.css" />
+		<!--[if lte IE 8]>
+		    <link rel="stylesheet" href="css/leaflet.ie.css" />
+		<![endif]-->
+		<link rel="stylesheet" href="css/main.css">
+
+        <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+
+
+<!-- Navigation & Logo-->
+<div class="mainmenu-wrapper">
+    <div class="container">
+        <div class="menuextras">
+            <div class="extras">
+                <ul>
+                    <li class="shopping-cart-items"><i class="glyphicon glyphicon-shopping-cart icon-white"></i> <a
+                            href="page-shopping-cart.html"><b>3 messages</b></a></li>
+                    <li>
+                        <div class="dropdown choose-country">
+                            <a class="#" data-toggle="dropdown" href="#"><img src="img/flags/gb.png"
+                                                                              alt="Great Britain"> UK</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a href="#"><img src="img/flags/us.png" alt="United States"> US</a>
+                                </li>
+                                <li role="menuitem"><a href="#"><img src="img/flags/cn.png" alt="China"> CN</a></li>
+                                <li role="menuitem"><a href="#"><img src="img/flags/es.png" alt="Spain"> ES</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="page-login.html">Login</a></li>
+                    <li><a href="page-register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav id="mainmenu" class="mainmenu">
+            <ul>
+                <li class="logo-wrapper"><a href="index.html"><img src="img/mPurpose-logo.png"
+                                                                   alt="Multipurpose Twitter Bootstrap Template"></a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="serviceIntro.html">Service Introduction</a>
+                </li>
+                <li>
+                    <a href="expert.html">Expert</a>
+                </li>
+                <li class="active">
+                    <a href="#">Company</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Navigation & Logo-->
+
+<!-- start profile -->
+<!--<div class="section">-->
+<!--<div class="container">-->
+<!--<h2>profile</h2>-->
+<!--<form>-->
+<!--<div class="form-group row">-->
+<!--<label class="col-md-1 col-md-offset-2 form-control-label">UserName</label>-->
+<!--<div class="col-md-5">-->
+<!--<input class="form-control" type="text">-->
+<!--</div>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+
+<!-- image -->
+<div class="section">
+    <div class="container">
+        <h2>Profile</h2>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">My Profile</h3>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel-body">
+                                <img id="imageHeader" src="img/product2.jpg">
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-md-offset-1 margin">
+                            <h4>360 Company</h4>
+                            Legal Person: Zhang Wei<br>
+                            email : ZhangWei@360.com
+                            <div class="actions">
+                                <a href="#" class="btn btn-default" role="button" style="width: 13em;height:2em;margin-top: 1.5em;">Edit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Basic</h3>
+                    </div>
+                    <div class="single-block">
+                        <div class="single-attribute">Star Rating:</div>
+                        <div class="single-value">
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                        </div>
+                    </div>
+                    <div class="single-block">
+                        <div class="single-attribute">Registr ID:</div>
+                        <div class="single-value">110000450259458</div>
+                    </div>
+                    <div class="single-block">
+                        <div class="single-attribute">Location:</div>
+                        <div class="single-value">China Beijing</div>
+                    </div>
+                    <div class="single-block">
+                        <div class="single-attribute">Mobile:</div>
+                        <div class="single-value">15056978790</div>
+                    </div>
+                    <div class="single-block">
+                        <div class="single-attribute">Account:</div>
+                        <div class="single-value"><span>$</span>10000</div>
+                    </div>
+                    <div class="single-block">
+                        <div class="single-attribute">Field:</div>
+                        <div class="single-value">Internet | Safety</div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Experts Questions</h3>
+                        <button class="btn btn-info pull-right" style="width: 58px; height: 30px;margin-top: -23px"><span>more</span></button>
+                    </div>
+                    <ul>
+                        <li>
+                            <h5><a href="#">
+                                How do we find and approach the projects of your company posted?
+                            </a></h5>
+                            <h5 class="date date-time">Date:2016-03-03</h5>
+                        </li>
+                        <li>
+                            <h5><a href="#">
+                                Do your company have projects about Andriod development area?
+                            </a></h5>
+                            <h5 class="date date-time">Date:2016-02-28</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-info" >
+                    <div class="panel-heading" id="my-project">
+                        <div class="collapse navbar-collapse">
+                            <ul class="my-menu">
+                                <li class="nav-current" role="presentation">
+                                    <a href="#" style="color: inherit;font-size: 16px; margin-bottom: 0; margin-top: 0"><b>My Projects (0)</b></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#" style="color: inherit;font-size: 16px; margin-bottom: 0; margin-top: 0"><b>My Consultants (0)</b></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#" style="color: inherit;font-size: 16px; margin-bottom: 0; margin-top: 0"><b>My Messages (0)</b></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="tab-content">
+                        <div id="my-projects" class="active tab-pane no-reload">
+                            <div class="text-center" style="margin-top: 20px;margin-bottom: 20px; padding-bottom: 10px">
+                                <h2>Get Started Now.</h2>
+                                <div class="btn-group btn-group-lg">
+                                    <button type="button" class="btn btn-info btn-lg">
+                                        Check My projects
+                                    </button>
+                                </div>
+                                <h4 class="btn-group hidden-xs">&nbsp;or&nbsp;</h4>
+                                <div class="btn-group btn-group-lg">
+                                    <button type="button" class="btn btn-info btn-lg">
+                                        Start A New Project
+                                    </button>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                        <div id="my-consultants" class="tab-pane no-reload">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><span>How do we find and approach the projects of your company posted ?</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><span class="date date-time">2016-03-01</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><a href="#">details</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><span>How do we find and approach the projects of your company posted ?</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><span class="date date-time">2016-03-01</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><a href="#">details</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><span>How do we find and approach the projects of your company posted ?</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><span class="date date-time">2016-03-01</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div class="row">
+                                        <h5><a href="#">details</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="my-messages" class="tab-pane no-reload">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span>Your project has a problem </span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span>From : System </span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span class="date date-time">2016-03-01</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><a href="#">details</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span>How do we find and approach the projects of your company posted ?</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span>From : Zhang Chengshuo </span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span class="date date-time">2016-03-01</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><a href="#">details</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span>How do we find and approach the projects of your company posted ?</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span>From : Zhang wei </span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><span class="date date-time">2016-03-01</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="row">
+                                        <h5><a href="#">details</a></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading" id="my-help">
+                        <h3 class="panel-title">What do you need help with ?</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="nav tabs-wrapper">
+                            <ul class="nav nav-tabs nav-justified hn-tabs" style="height: 120px">
+                                <li>
+                                    <a href="#">
+                                        <i><img src="img/service-icon/box.png"></i>
+                                        <br>
+                                        A New Business
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i><img src="img/service-icon/chat.png"></i>
+                                        <br>
+                                        Marketing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i><img src="img/service-icon/diamond.png"></i>
+                                        <br>
+                                        Analysis
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i><img src="img/service-icon/ruler.png"></i>
+                                        <br>
+                                        Optimization
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading" id="my-experts">
+                        <h3 class="panel-title">Related Experts</h3>
+                        <button class="btn btn-info pull-right" style="width: 58px; height: 30px;margin-top: -23px"><span>fresh</span></button>
+                    </div>
+                    <div class="expert-list row" data-first-consultant="4">
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="col-xs-12 text-center pic-row">
+                                <img src="img/user2.jpg" alt="Lily" class="img-responsive img-circle profile-pic col-xs-offset-1">
+                            </div>
+                            <div class="col-xs-12 text-center name-row">
+                                <strong>Lily</strong>
+                            </div>
+                            <div class="single-value" >
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-xs-12 text-center school-row">
+                                <img class="img-responsive" src="img/expert-graduate-certificate/expert1-graduate-certificate.jpg" alt="Columbia">
+                            </div>
+                            <div class="col-xs-12 text-center view-row" style="padding-top: 10px">
+                                <a href="#" target="_blank" class="btn btn-default btn-sm">View Profile
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="col-xs-12 text-center pic-row">
+                                <img src="img/user3.jpg" alt="Edward" class="img-responsive img-circle profile-pic col-md-offset-1">
+                            </div>
+                            <div class="col-xs-12 text-center name-row">
+                                <strong>Edward</strong>
+                            </div>
+                            <div class="single-value">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-xs-12 text-center school-row">
+                                <img class="img-responsive" src="img/expert-graduate-certificate/expert2-graduate-certificate.jpg" alt="Harvard">
+                            </div>
+                            <div class="col-xs-12 text-center view-row" style="padding-top: 10px">
+                                <a href="#" target="_blank" class="btn btn-default btn-sm">View Profile
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="col-xs-12 text-center pic-row">
+                                <img src="img/user4.jpg" alt="Han" class="img-responsive img-circle profile-pic col-xs-offset-1">
+                            </div>
+                            <div class="col-xs-12 text-center name-row">
+                                <strong>Han</strong>
+                            </div>
+                            <div class="single-value">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-xs-12 text-center school-row">
+                                <img class="img-responsive" src="img/expert-graduate-certificate/expert3-graduate-certificate.jpg" alt="Columbia">
+                            </div>
+                            <div class="col-xs-12 text-center view-row" style="padding-top: 10px">
+                                <a href="#" target="_blank" class="btn btn-default btn-sm">View Profile
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <div class="col-xs-12 text-center pic-row">
+                                <img src="img/user5.jpg" alt="Even" class="img-responsive img-circle profile-pic col-xs-offset-1">
+                            </div>
+                            <div class="col-xs-12 text-center name-row">
+                                <strong>Even</strong>
+                            </div>
+                            <div class="single-value">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                            </div>
+                            <div class="col-xs-12 text-center school-row">
+                                <img class="img-responsive" src="img/expert-graduate-certificate/expert4-graduate-certificate.jpg" alt="Columbia">
+                            </div>
+                            <div class="col-xs-12 text-center view-row" style="padding-top: 10px">
+                                <a href="#" target="_blank" class="btn btn-default btn-sm">View Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End profile -->
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-footer col-md-3 col-xs-6">
+                <h3>Successful Cases</h3>
+                <ul class="no-list-style footer-navigate-section">
+                    <li><a href="#">Student Manage System</a></li>
+                    <li><a href="#">Papers on Analysis of air</a></li>
+                    <li><a href="#">Advanced Agriculture</a></li>
+                    <li><a href="#">How to deal with ring of planes</a></li>
+                </ul>
+            </div>
+            <div class="col-footer col-md-3 col-xs-6">
+                <h3>Resource</h3>
+                <ul class="no-list-style footer-navigate-section">
+                    <li><a href="page-blog-posts.html">Company Introduced</a></li>
+                    <li><a href="page-portfolio-3-columns-2.html">Use Case</a></li>
+                    <li><a href="page-products-3-columns.html">Privacy Policy</a></li>
+                    <li><a href="page-faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="col-footer col-md-4 col-xs-6">
+                <h3>Contacts</h3>
+
+                <p class="contact-us-details">
+                    <b>Address:</b> wenhui Street, wuzhong, SuZhou, China<br/>
+                    <b>Phone:</b> +188 8888 8888<br/>
+                    <b>Fax:</b> +188 8888 8888<br/>
+                    <b>Email:</b> <a
+                        href="mailto:chengshuozhang@163.com">chengshuozhang@163.com</a>
+                </p>
+            </div>
+            <div class="col-footer col-md-2 col-xs-6">
+                <h3>Stay Connected</h3>
+                <ul class="footer-stay-connected no-list-style">
+                    <li><a href="#" class="wechat"></a></li>
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="QQ"></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-copyright">&copy; 2016 mPurpose. All rights reserved.ICP主体备案号： 苏ICP备15060798号</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!-- Javascripts -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.sequence-min.js"></script>
+        <script src="js/jquery.bxslider.js"></script>
+        <script src="js/main-menu.js"></script>
+        <script src="js/template.js"></script>
+
+</body>
+</html>

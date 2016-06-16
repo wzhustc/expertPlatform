@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>mPurpose - Multipurpose Feature Rich Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icomoon-social.css">
+    <link href="bootstrap.css" rel="stylesheet">
+    <link href="font-awesome.css" rel="stylesheet">
+    <style>
+        #editor {
+            resize:vertical;
+            overflow:auto;
+            border:1px solid silver;
+            border-radius:5px;
+            min-height:100px;
+            box-shadow: inset 0 0 10px silver;
+            padding:1em;
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/leaflet.ie.css"/>
+    <![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+
+
+<!-- Navigation & Logo-->
+<div class="mainmenu-wrapper">
+    <div class="container">
+        <div class="menuextras">
+            <div class="extras">
+                <ul>
+                    <li class="shopping-cart-items"><i class="glyphicon glyphicon-shopping-cart icon-white"></i> <a
+                            href="page-shopping-cart.html"><b>3 messages</b></a></li>
+                    <li>
+                        <div class="dropdown choose-country">
+                            <a class="#" data-toggle="dropdown" href="#"><img src="img/flags/gb.png"
+                                                                              alt="Great Britain"> UK</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a href="#"><img src="img/flags/us.png" alt="United States"> US</a>
+                                </li>
+                                <li role="menuitem"><a href="#"><img src="img/flags/cn.png" alt="China"> CN</a></li>
+                                <li role="menuitem"><a href="#"><img src="img/flags/es.png" alt="Spain"> ES</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="page-login.html">Login</a></li>
+                    <li><a href="page-register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav id="mainmenu" class="mainmenu">
+            <ul>
+                <li class="logo-wrapper"><a href="index.html"><img src="img/mPurpose-logo.png"
+                                                                   alt="Multipurpose Twitter Bootstrap Template"></a>
+                </li>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="serviceIntro.html">Service Introduction</a>
+                </li>
+                <li>
+                    <a href="expert.html">Expert</a>
+                </li>
+                <li class="active">
+                    <a href="#">Company</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Type -->
+<div class="container post-step-container" style="height: auto; ">
+<div class="post-step" data-step="1" style="opacity: 1; position: relative; display: block;">
+
+<form class="project-details-ajax" role="form" method="POST" >
+<input type="hidden" name="form.name" value="post_project_details">
+<input type="hidden" name="nerd_encoded_id" value="">
+<input type="hidden" name="project_encoded_id" value="">
+<input type="hidden" name="invitation_origin" value="">
+<input type="hidden" name="display_config" value="{&quot;show_budget_widget&quot;:false,&quot;show_slider&quot;:false,&quot;
+        show_tooltip&quot;:false}">
+
+
+<div class="section">
+    <div class="container">
+        <h2>Post a Project</h2>
+        <!-- Header -->
+        <form class="form-horizontal" role="form" id="submit_form_zzjs" name="submit_form_zzjs" method="post" action="">
+        <HR style="border-width:1px;" width="80%" color=#987cb9 SIZE=1>
+
+        <div class="row">
+
+            <!-- Project Type -->
+            <div class="field row drop-down-selection">
+            <div class="col-xs-6 col-xs-offset-3" >
+                <div class="form-group" data-provide="popover" data-toggle="popover" data-html="true" title="" data-trigger="manual" data-original-title="Select the most relevant project type or pick custom if none fit your needs.">
+                    <label for="project_type" style="font-size: 15px; margin-bottom: 14px; margin-top: 14px">Project Type</label>
+                    <select name="project_type" id="project_type" class="form-control" >
+                        <option value="" selected>Project Type</option>
+                        <option value="0">Market Analysis &amp; Research</option>
+                        <option value="1">Business Plan</option>
+                        <option value="2">Marketing Plan</option>
+                        <option value="3">Financial Projections &amp; Analysis</option>
+                        <option value="4">Competitive Analysis</option>
+                        <option value="5">New Market Entry PlanPricing Strategy</option>
+                    </select>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    <div class="row">
+        <!-- Project Industry -->
+        <hr style="border: 1px dotted #808080">
+        <div class="field row ">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="form-group" data-provide="popover" data-toggle="popover" title="" data-content="" data-trigger="manual" data-original-title="Select the industry that best fits your project.">
+                    <label for="industry" style="font-size: 15px; margin-top: 14px; margin-bottom: 14px">Project Industry</label>
+                    <select name="industry" id="industry" class="form-control multiselect">
+                        <option value="" ></option>
+                        <option value="2">Accounting</option>
+                        <option value="3">Advertising</option>
+                        <option value="4">Aerospace</option>
+                        <option value="1">Agriculture</option>
+                        <option value="5">Airline</option>
+                        <option value="6">Apparel &amp; Accessories</option>
+                        <option value="7">Automotive</option>
+                        <option value="8">Banking</option>
+                        <option value="10">Biotech</option>
+                        <option value="9">Broadcasting</option>
+                        <option value="38">Chemicals</option>
+                        <option value="11">Computer</option>
+                        <option value="12">Consulting</option>
+                        <option value="13">Consumer Products</option>
+                        <option value="14">Defense</option>
+                        <option value="15">Education</option>
+                        <option value="16">Electronics</option>
+                        <option value="17">Energy</option>
+                        <option value="18">Entertainment &amp; Leisure</option>
+                        <option value="19">Financial Services</option>
+                        <option value="20">Food &amp; Beverage</option>
+                        <option value="35">Government</option>
+                        <option value="21">Health Care</option>
+                        <option value="36">Hospitality</option>
+                        <option value="34">Logistics</option>
+                        <option value="22">Manufacturing</option>
+                        <option value="32">Nonprofit</option>
+                        <option value="23">Pharmaceuticals</option>
+                        <option value="24">Private Equity</option>
+                        <option value="37">Professional Services</option>
+                        <option value="25">Publishing</option>
+                        <option value="26">Real Estate</option>
+                        <option value="27">Retail &amp; Wholesale</option>
+                        <option value="31">Sports</option>
+                        <option value="28">Technology</option>
+                        <option value="29">Telecommunications</option>
+                        <option value="33">Transportation/Shipping</option>
+                        <option value="30">Venture Capital</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Project Description -->
+        <hr style="border: 1px dotted #808080">
+        <div class="field row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="form-group" data-provide="popover" data-toggle="popover" data-html="true" title="" data-content="Please provide some background information about your company and some details about your project." data-trigger="manual" data-original-title="How can our consultants help? ">
+                    <label  style="font-size: 15px ; margin-top: 14px; margin-bottom: 14px">Project Description</label>
+                    <div class="content">
+                        <div class="container-fluid">
+                            <div id='pad-wrapper'>
+                                <div id="editparent">
+                                    <div id='editControls' class='span9' style=' padding:5px;'>
+                                        <div class='btn-group'>
+                                            <a class='btn glyphicon glyphicon-circle-arrow-left' data-role='undo' href='#'><i class='icon-undo'></i></a>
+                                            <a class='btn glyphicon glyphicon-circle-arrow-right' data-role='redo' href='#'><i class='icon-repeat'></i></a>
+                                            <a class='btn glyphicon glyphicon-bold' data-role='bold' href='#'></a>
+                                            <a class='btn glyphicon glyphicon-italic' data-role='italic' href='#'></a>
+                                            <a class='btn glyphicon glyphicon-align-left' data-role='justifyLeft' href='#'><i class='icon-align-left'></i></a>
+                                            <a class='btn glyphicon glyphicon-align-center' data-role='justifyCenter' href='#'><i class='icon-align-center'></i></a>
+                                            <a class='btn glyphicon glyphicon-align-right' data-role='justifyRight' href='#'><i class='icon-align-right'></i></a>
+                                            <a class='btn glyphicon glyphicon-align-justify' data-role='justifyFull' href='#'><i class='icon-align-justify'></i></a>
+                                            <a class='btn glyphicon glyphicon-list' data-role='justifyList' href='#'></a>
+                                            <a class='btn glyphicon glyphicon-text-height' aria-hidden="true" data-role='font' href='#'></a>
+                                            <a class='btn glyphicon glyphicon-text-width' aria-hidden="true" data-role='bold' href='#'></a>
+                                            <a class='btn glyphicon glyphicon-indent-left' data-role='indentLeft' href="#"><i class='icon-indent-right'></i></a>
+                                            <a class='btn glyphicon glyphicon-indent-right' data-role='outdentRight' href="#"><i class='icon-indent-left'></i></a>
+                                        </div>
+                                    </div>
+                                    <!--文本编辑框-->
+                                    <div id='editor' class='span9' style='' contenteditable>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-banner" style="width:728px; margin:0 auto"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Attachments -->
+        <hr style="border: 1px dotted #808080">
+        <div class="field row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="form-group" data-date-start-date="">
+                    <label for="industry" style="font-size: 15px">Attachments</label>
+                    <div class="form-group">
+                        <input class="col-sm-5" type="file" style="margin-top: 14px" title="file">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Dates -->
+        <hr style="border: 1px dotted #808080">
+        <div class="field row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="form-group">
+                    <label for="industry" style="margin-top: 14px">DateTimes</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2" style="font-size: 13px">Start Date</label>
+                    <div class="col-sm-4">
+                        <input type="date" class="form-control col-sm-3">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-2" style="font-size: 13px">End Date</label>
+                    <div class="col-sm-4">
+                        <input type="date" class="form-control col-sm-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Budget -->
+        <hr style="border: 1px dotted #808080">
+        <div class="field row">
+            <div class="col-xs-6 col-xs-offset-3">
+                <div class="form-group" data-original-title="" title="">
+                    <label for="industry" style="margin-top: 14px; margin-bottom: 14px; font-size: 15px">Estimated Budget</label>
+
+                    <input type="text" name="estimated_budget" class="form-control" placeholder="$">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <!-- Buttons -->
+        <hr style="border: 2px solid #808080">
+        <div class="form-group">
+            <div class="col-xs-6">
+                <button type="submit" class="btn btn-default col-sm-offset-8">Review and Post</button>
+            </div>
+            <div class="col-xs-6">
+                <button type="submit" class="btn btn-default col-sm-offset-1">Save To Be Draft</button>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="disclaimer col-xs-12 col-sm-offset-6" style="margin-top: 16px; font-size: 17px">
+                By clicking button means you have read and agreed to the
+                <a href="#">Terms &amp; Conditions.</a>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+</form>
+
+
+
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-footer col-md-3 col-xs-6">
+                <h3>Successful Cases</h3>
+                <ul class="no-list-style footer-navigate-section">
+                    <li><a href="#">Student Manage System</a></li>
+                    <li><a href="#">Papers on Analysis of air</a></li>
+                    <li><a href="#">Advanced Agriculture</a></li>
+                    <li><a href="#">How to deal with ring of planes</a></li>
+                </ul>
+            </div>
+            <div class="col-footer col-md-3 col-xs-6">
+                <h3>Resource</h3>
+                <ul class="no-list-style footer-navigate-section">
+                    <li><a href="page-blog-posts.html">Company Introduced</a></li>
+                    <li><a href="page-portfolio-3-columns-2.html">Use Case</a></li>
+                    <li><a href="page-products-3-columns.html">Privacy Policy</a></li>
+                    <li><a href="page-faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="col-footer col-md-4 col-xs-6">
+                <h3>Contacts</h3>
+
+                <p class="contact-us-details">
+                    <b>Address:</b> wenhui Street, wuzhong, SuZhou, China<br/>
+                    <b>Phone:</b> +188 8888 8888<br/>
+                    <b>Fax:</b> +188 8888 8888<br/>
+                    <b>Email:</b> <a
+                        href="mailto:chengshuozhang@163.com">chengshuozhang@163.com</a>
+                </p>
+            </div>
+            <div class="col-footer col-md-2 col-xs-6">
+                <h3>Stay Connected</h3>
+                <ul class="footer-stay-connected no-list-style">
+                    <li><a href="#" class="wechat"></a></li>
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="QQ"></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-copyright">&copy; 2016 mPurpose. All rights reserved.ICP主体备案号： 苏ICP备15060798号</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Javascripts -->
+
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js2/jquery.min.js"></script>
+<script src="js2/bootstrap.min.js"></script>
+
+
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.sequence-min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/main-menu.js"></script>
+<script src="js/template.js"></script>
+</div>
+</div>
+</body>
+</html>

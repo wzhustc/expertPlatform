@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"  
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	                    http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+				        http://www.springframework.org/schema/context 
+				        http://www.springframework.org/schema/context/spring-context-3.2.xsd
+				        http://www.springframework.org/schema/tx 
+				        http://www.springframework.org/schema/tx/spring-tx-3.2.xsd
+				        http://www.springframework.org/schema/aop
+				        http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+				        http://www.springframework.org/schema/mvc
+				        http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd"
+				        >
+	<!-- mvc-annotation-driven 
+	注意：这种方法可以代替注册的映射器和注册的适配器的添加，而且还加载了json的解析器等，推荐使用
+	 -->
+	<mvc:annotation-driven></mvc:annotation-driven>
+	
+	<!-- 组件扫描 -->
+	<context:component-scan base-package="cn.ustc.ep.controller"></context:component-scan>
+	
+	<!-- 视图解析器  解析jsp 默认使用jstl标签 -->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- 前缀后缀 -->
+	</bean>	
+
+</beans>
+
+

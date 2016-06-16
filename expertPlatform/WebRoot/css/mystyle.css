@@ -1,0 +1,456 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*用于验证的样式。本人尝试许久，此处label后一定需要空格，input后一定不能有空格*/
+label .error {
+	color:#F30;
+	font-style:italic;
+}
+input.error {
+	border: 1px solid red;
+}
+
+#pageLogin .ui-body-c {
+	margin-top:10px;
+	margin-left:10px;
+	margin-right:10px;
+	background-color:#CFF;
+}
+#pageLogin .ui-page-theme-a {
+	background-color:red; /*{a-page-background-color}*/;
+}
+#pageLogin .logbtn .ui-btn {
+	background-color:#3388CC;
+	border-radius: 3em;
+	color:#FFF;
+}
+#pageLogin #regbutton {
+	border-radius: 3em;
+	margin-top:0px;
+}
+#pageLogin .ui-field-contain .ui-controlgroup-controls {
+	width:100%;
+}
+#pageLogin .validateInfo {
+	color:#F30;
+}
+
+#pageone .ui-grid-a>.ui-block-a {
+	width:85%;
+}
+#pageone .ui-grid-a>.ui-block-b {
+	width:15%;
+	padding-top:5px;
+}
+
+#pageone .addproject .ui-btn-icon-left:after, #pageone .addproject .ui-btn-icon-right:after, #pageone .addproject .ui-btn-icon-top:after, #pageone .addproject .ui-btn-icon-bottom:after, #pageone .addproject .ui-btn-icon-notext:after{
+	background-color:#00CC66;
+}
+.cell {
+	height:65px;
+}
+.cell2 {
+	height:80px;
+	background-color:#3388CC;
+}
+.ui-listview li {
+	margin-bottom:5px;
+	margin-top:10px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#3388CC;
+}
+.released li {
+	border-color:#F63;
+}
+.executed li {
+	border-color:#69F;
+}
+.gone li {
+	border-color:#000;
+}
+.gonelong li {
+	border-color:#C2C2C2;
+}
+.name {
+	margin-top:0px;
+}
+.prolist li {
+	margin-left:10px;
+	margin-right:10px;
+}
+.ui-collapsible-content .ui-listview:not(.ui-listview-inset) li.ui-first-child {
+	border-top-width:1px;
+}
+.ui-collapsible-content .ui-listview:not(.ui-listview-inset) li.ui-last-child {
+	border-bottom-width:1px;
+}
+.ui-collapsible-inset .ui-collapsible-heading .ui-btn {
+	background-color:#3388CC;
+	color:#FFF;
+}
+.searchbar {
+	margin-top:10px;
+	margin-bottom:0px;
+	margin-left:5px;
+	margin-right:5px;
+}
+.titlestyle {
+	font-weight:lighter;
+}
+.ui-listview>.ui-li-static {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+#pagetwo .ui-grid-a {
+	height:45px;
+}
+#pagetwo .ui-grid-a>.ui-block-a {
+	width:25%;
+	margin-top:5px;
+	padding-top:12px;
+	text-align:center;
+	background-color:#3388CC;
+	color:#FFF;
+	height:38px;
+	border-top-left-radius:1em;
+	border-bottom-left-radius:1em;
+}
+#pagetwo .ui-grid-a>.ui-block-a label {
+	font-size:13px;
+}
+#pagetwo .ui-grid-a>.ui-block-b {
+	width:75%;
+}
+#pagetwo .ui-header .ui-select .ui-btn {
+	line-height:2.3;
+	background-color:white;
+	border-radius:0em;
+}
+.searchexp .ui-btn {
+	margin-left:70px;;
+	margin-right:70px;
+	background-color:#3388CC;
+	color:white;
+	line-height:2.3;
+	border-radius:1em;
+}
+[class*=ui-block-]>.ui-select {
+	margin-left:0em;
+	margin-top:0.3em;
+	margin-bottom:0.3em;
+}
+.companypagetwo .ui-header .ui-btn {
+	display:block;
+	font-size:14px;
+	font-weight:normal;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+.hrcss {
+	-webkit-margin-before:0em;
+	-webkit-margin-after:0em;
+}
+#header1,#header2,#header3 {
+	background-color:#3388CC;
+	color:#FFF;
+	text-align:center;
+	height:40px;
+}
+.detailcontent {
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:10px;
+}
+#header1 p,#header2 p,#header3 p {
+	margin-top:9px;
+}
+#header2 .ui-btn-icon-left:after, #header2 .ui-btn-icon-right:after, #header2 .ui-btn-icon-top:after, #header2 .ui-btn-icon-bottom:after, #header2 .ui-btn-icon-notext:after,#header3 .ui-btn-icon-left:after, #header3 .ui-btn-icon-right:after, #header3 .ui-btn-icon-top:after, #header3 .ui-btn-icon-bottom:after, #header3 .ui-btn-icon-notext:after {
+	background-color:#00CC66;
+}
+.expert .ui-li-has-thumb>img:first-child {
+	max-height: 7.5em;
+    max-width: 7.5em;
+}
+.expert>.ui-li-static.ui-li-has-thumb {
+	min-height: 7em;
+    padding-left: 8em;
+}
+#expertname {
+	color:#3388CC;
+	font-weight:900;
+}
+#expertfield {
+	margin-top:10px;
+	margin-bottom:10px;
+	color:#F69;
+	font-size:16px;
+	font-weight:bold;
+	white-space:pre-wrap;
+}
+#expertlocation,#experthot {
+	font-size:13.5px;
+}
+.celltitle {
+	font-size:11px;
+	color:#3388CC;
+	font-weight:bold;
+	padding-top:0.5em;
+}
+#expertglory,#expertgloryurl,#expertadd,#projectname,#projectcontent,#projectbudget,#projectpublicdate,#projectdeadline,#projectaddition {
+	font-size:13.8px;
+	white-space:pre-wrap;
+	line-height:1.7em;
+}
+#experttel {
+	font-size:11px;
+	color:#3388CC;
+	font-weight:bold;
+}
+#experttel a {
+	color:#000;
+	font-size:15px;
+}
+#expertpro1 {
+	background-color:#3388CC;
+	color:#FFF;
+	text-align:center;
+	height:25px;
+	margin-top:2px;
+}
+#expertpro2 {
+	margin-top:5px;
+}
+#expertpro2 .ui-btn {
+	background-color:#3388CC;
+	color:white;
+	line-height:0.25;
+	text-align:center;
+	border-width:0px;
+}
+#relate {
+	border-width:0em;
+}
+#relate .ui-btn {
+	background-color:#00CC66;
+	text-align:center;
+	color:#FFF;
+	border-color:#00CC66;
+}
+#invite .ui-btn {
+	background-color:#00CC66;
+	text-align:center;
+	color:#FFF;
+	border-color:#00CC66;
+}
+#invite,#revoke {
+	border-width:0px;
+}
+#revoke .ui-btn {
+	background-color:#CC0033;
+	text-align:center;
+	color:#FFF;
+	border-color:#CC0033;
+}
+.project .ui-footer .ui-btn {
+	display:block;
+	background-color:#3388CC;
+	color:#FFF;
+	height:22px;
+	font-size:17px;
+	padding-top:13px;
+}
+#personal li{
+	border-color:#FFF;
+	border-bottom-color:#3388cc;
+}
+#pagefour {
+	padding-top:10px;
+}
+#personal .ui-btn {
+	background-color:#FFF;
+	border-color:#FFF;
+}
+#personal .ui-btn-icon-left:after, #personal .ui-btn-icon-right:after, #personal .ui-btn-icon-top:after, #personal .ui-btn-icon-bottom:after, #personal .ui-btn-icon-notext:after{
+	background-color:#3388cc;
+	border-radius:0px;
+}
+#personal .ui-li-has-thumb>img:first-child {
+	max-height: 4.8em;
+    max-width: 4.8em;
+}
+#personal>.ui-li-static.ui-li-has-thumb {
+	min-height: 4.8em;
+    padding-left: 6em;
+	margin-left:10px;
+	margin-right:10px;
+}
+#logoutbtn .ui-btn {
+	background-color:#CC0033;
+	text-align:center;
+	color:#FFF;
+	border-color:#CC0033;
+	margin-left:10px;
+	margin-right:10px;
+	margin-top:20px;
+}
+#companynamebar,#expertnamebar {
+	color:#3388cc;
+	margin-top:1.5em;
+}
+#publicprojectpage {
+	background-color:#FFF;
+}
+#publicprojectpage .ui-content {
+	margin-left:5px;
+	margin-right:5px;
+}
+#publicprojectpage ul li {
+	border-bottom-width:1px;
+	border-bottom-color:#3388cc;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	margin-top:0px;
+}
+#publicprojectpage .ui-grid-a {
+	min-height:43px;
+}
+#publicprojectpage .ui-grid-a>.ui-block-a {
+	width:25%;
+	text-align:center;
+	background-color:#FFF;
+	color:#3388cc;
+	min-height:43px;
+	border-bottom-left-radius:0px;
+	border-top-left-radius:0px;
+	margin-top:0px;
+	padding-top:13px;
+}
+#publicprojectpage .ui-grid-a>.ui-block-b {
+	min-height:43px;
+	width:75%;
+}
+#publicprojectpage .ui-input-text {
+	border-width:0px;
+	border-style:none;
+	margin:0px;
+	border-radius:0px;
+	min-height:43px;
+}
+#publicprojectpage .ui-input-text input {
+	line-height:2.3em;
+	padding-bottom:0px;
+}
+#publicprojectpage textarea.ui-input-text {
+	padding-bottom:0px;
+	padding-top:13px;
+}
+#publicprojectpage .ui-shadow-inset {
+	box-shadow:none;
+}
+.publicbtn .ui-btn {
+	margin-left:10px;;
+	margin-right:10px;
+	margin-top:25px;
+	background-color:#3388CC;
+	color:white;
+	line-height:1.5;
+	border-radius:0em;
+}
+#companyinformation,#expertinformation {
+	background-color:#FFF;
+}
+#companyinformation .ui-content,#expertinformation .ui-content {
+	margin-left:5px;
+	margin-right:5px;
+}
+#companyinformation ul li,#expertinformation ul li {
+	border-bottom-width:1px;
+	border-bottom-color:#3388cc;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	margin-top:0px;
+}
+#companyinformation .ui-grid-a,#expertinformation .ui-grid-a {
+	min-height:43px;
+}
+#companyinformation .ui-grid-a>.ui-block-a,#expertinformation .ui-grid-a>.ui-block-a {
+	width:30%;
+	text-align:center;
+	background-color:#FFF;
+	color:#000;
+	min-height:43px;
+	border-bottom-left-radius:0px;
+	border-top-left-radius:0px;
+	margin-top:0px;
+	padding-top:13px;
+}
+#companyinformation .ui-grid-a>.ui-block-b,#expertinformation .ui-grid-a>.ui-block-b {
+	min-height:43px;
+	width:70%;
+}
+#companyinformation .ui-input-text,#expertinformation .ui-input-text {
+	border-width:0px;
+	border-style:none;
+	margin:0px;
+	border-radius:0px;
+	min-height:43px;
+}
+#expertinformation .special .ui-btn {
+	border-width:0px;
+	border-style:none;
+	margin:0px;
+	border-radius:0px;
+	background-color:#FFF;
+	text-shadow:none;
+	box-shadow:none;
+	font-weight:lighter;
+}
+#companyinformation .special .ui-btn {
+	border-width:0px;
+	border-style:none;
+	margin:0px;
+	border-radius:0px;
+	background-color:#FFF;
+	text-shadow:none;
+	box-shadow:none;
+	font-weight:lighter;
+}
+#companyinformation .ui-input-text input,#expertinformation .ui-input-text input {
+	line-height:2.3em;
+	padding-bottom:0px;
+	text-align:center;
+}
+#companyinformation textarea.ui-input-text,#expertinformation textarea.ui-input-text {
+	padding-bottom:0px;
+	padding-top:13px;
+}
+#companyinformation .ui-shadow-inset,#expertinformation .ui-shadow-inset {
+	box-shadow:none;
+}
+#myPopup1 .ui-listview li,#myPopup2 .ui-listview li,#myPopup3 .ui-listview li,#myPopup4 .ui-listview li,#myPopup5 .ui-listview li, #myPopup6 .ui-listview li{
+	text-align:center;
+}
+#myPopup1 .ui-listview li a,#myPopup2 .ui-listview li a,#myPopup3 .ui-listview li a,#myPopup4 .ui-listview li a,#myPopup5 .ui-listview li a,#myPopup6 .ui-listview li a,#myPopup7 .ui-listview li a,#myPopup8 .ui-listview li a{
+	background-color:#3388cc;
+	text-align:center;
+	color:#FFF;
+}
+#myPopup1 .ui-listview .redpop a,#myPopup2 .ui-listview .redpop a,#myPopup3 .ui-listview .redpop a,#myPopup4 .ui-listview .redpop a,#myPopup5 .ui-listview .redpop a,#myPopup6 .ui-listview .redpop a,#myPopup7 .ui-listview .redpop a,#myPopup8 .ui-listview .redpop a{
+	background-color:#CC0033;
+}
+#myPopup6 .ui-listview .greepop a{
+	background-color:#96B95A;
+}
+#myPopup1 a .ui-btn-icon-left:after, #myPopup1 .ui-btn-icon-right:after, #myPopup1 .ui-btn-icon-top:after, #myPopup1 .ui-btn-icon-bottom:after, #myPopup1 .ui-btn-icon-notext:after,
+#myPopup2 a .ui-btn-icon-left:after, #myPopup2 .ui-btn-icon-right:after, #myPopup2 .ui-btn-icon-top:after, #myPopup2 .ui-btn-icon-bottom:after, #myPopup2 .ui-btn-icon-notext:after, 
+#myPopup3 a .ui-btn-icon-left:after, #myPopup3 .ui-btn-icon-right:after, #myPopup3 .ui-btn-icon-top:after, #myPopup3 .ui-btn-icon-bottom:after, #myPopup3 .ui-btn-icon-notext:after,
+#myPopup4 a .ui-btn-icon-left:after, #myPopup4 .ui-btn-icon-right:after, #myPopup4 .ui-btn-icon-top:after, #myPopup4 .ui-btn-icon-bottom:after, #myPopup4 .ui-btn-icon-notext:after,
+#myPopup5 a .ui-btn-icon-left:after, #myPopup5 .ui-btn-icon-right:after, #myPopup5 .ui-btn-icon-top:after, #myPopup5 .ui-btn-icon-bottom:after, #myPopup5 .ui-btn-icon-notext:after,
+#myPopup6 a .ui-btn-icon-left:after, #myPopup6 .ui-btn-icon-right:after, #myPopup6 .ui-btn-icon-top:after, #myPopup6 .ui-btn-icon-bottom:after, #myPopup6 .ui-btn-icon-notext:after,
+#myPopup7 a .ui-btn-icon-left:after, #myPopup7 .ui-btn-icon-right:after, #myPopup7 .ui-btn-icon-top:after, #myPopup7 .ui-btn-icon-bottom:after, #myPopup7 .ui-btn-icon-notext:after,
+#myPopup8 a .ui-btn-icon-left:after, #myPopup8 .ui-btn-icon-right:after, #myPopup8 .ui-btn-icon-top:after, #myPopup8 .ui-btn-icon-bottom:after, #myPopup8 .ui-btn-icon-notext:after {
+	background-color:#00CC66;
+}

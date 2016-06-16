@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>mPurpose - Multipurpose Feature Rich Bootstrap Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/icomoon-social.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/leaflet.ie.css"/>
+    <![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to
+    improve your experience.</p>
+<![endif]-->
+
+
+<!-- Navigation & Logo-->
+<div class="mainmenu-wrapper">
+    <div class="container">
+        <div class="menuextras">
+            <div class="extras">
+                <ul>
+                    <li class="shopping-cart-items"><i class="glyphicon glyphicon-shopping-cart icon-white"></i> <a
+                            href="page-shopping-cart.html"><b>3 messages</b></a></li>
+                    <li>
+                        <div class="dropdown choose-country">
+                            <a class="#" data-toggle="dropdown" href="#"><img src="img/flags/gb.png"
+                                                                              alt="Great Britain"> UK</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a href="#"><img src="img/flags/us.png" alt="United States"> US</a>
+                                </li>
+                                <li role="menuitem"><a href="#"><img src="img/flags/cn.png" alt="China"> CN</a></li>
+                                <li role="menuitem"><a href="#"><img src="img/flags/es.png" alt="Spain"> ES</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="page-login.html">Login</a></li>
+                    <li><a href="page-register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav id="mainmenu" class="mainmenu">
+            <ul>
+                <li class="logo-wrapper"><a href="index.html"><img src="img/mPurpose-logo.png"
+                                                                   alt="Multipurpose Twitter Bootstrap Template"></a>
+                </li>
+                <li class="active">
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="serviceIntro.html">Service Introduction</a>
+                </li>
+                <li>
+                    <a href="expert.html">Expert</a>
+                </li>
+                <li>
+                    <a href="#">Company</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--End Navigation & Logo-->
+
+<!-- image -->
+<div class="section">
+    <div class="container">
+        <h2>Company Profile Edit</h2>
+
+        <form class="form-horizontal" role="form">
+            <HR style="border-width:1px;" width="80%" color=#987cb9 SIZE=1>
+
+            <h3>User Info</h3>
+            <div class="form-group">
+                <label for="inputUserName" class="col-sm-2 col-md-offset-1 control-label">User Name</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="inputUserName" placeholder="UserName">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">Real Name</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" name="realName" placeholder="RealName">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">Mobile</label>
+                <div class="col-sm-5">
+                    <input type="number" class="form-control" placeholder="Mobile">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">City</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" name="realId" placeholder="City">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">User Image</label>
+                <input class="col-sm-5" style="margin-top: 7px;" type="file">
+            </div>
+
+            <!--company info start-->
+            <hr style="border: 1px dotted #808080">
+            <h3>Company Info</h3>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">Company Name</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" name="companyName" placeholder="Company Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">Business Field</label>
+                <div class="col-sm-5">
+                    <select class="form-control">
+                        <option value="0" selected>Business Field</option>
+                        <option value="1">Internet</option>
+                        <option value="2">Financial</option>
+                        <option value="3">Chemicals</option>
+                        <option value="4">Education</option>
+                        <option value="5">Electronics</option>
+                        <option value="6">Entertainment</option>
+                        <option value="7">Government</option>
+                        <option value="8">Nonprofit</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">Location</label>
+                <div class="col-sm-5">
+                    <div class="col-sm-4">
+                        <select class="form-control">
+                            <option value="0" selected>Country</option>
+                            <option>China</option>
+                            <option>English</option>
+                            <option>USA</option>
+                            <option>Japan</option>
+                            <option>Italy</option>
+                            <option>Australia</option>
+                            <option>Canada</option>
+                        </select>
+
+                    </div>
+                    <div class="col-sm-4">
+                       <!-- <select class="form-control">
+                            <option value="0" selected>City</option>
+                            <option value="1">Suzhou</option>
+                            <option>Beijing</option>
+                            <option>Shanghai</option>
+                            <option>NewYork</option>
+                            <option>Landon</option>
+                            <option>Shenzhen</option>
+                            <option>Carlifornia</option>
+                        </select>-->
+
+					<input type="text" class="form-control" name = "city" placeholder = "City">
+                    </div>
+                    <div class="col-sm-4">
+					<input type="text" class="form-control" name= "street" placeholder = "Street">
+                       <!-- <select class="form-control">
+                            <option value="0" selected>Street</option>
+                            <option>Suzhou</option>
+                            <option>Beijing</option>
+                            <option>Shanghai</option>
+                            <option>NewYork</option>
+                            <option>Landon</option>
+                            <option>Shenzhen</option>
+                            <option>Carlifornia</option>
+                        </select>-->
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">Detail Address</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" name="detailAddress" placeholder="Detail Address">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">business license</label>
+                <input class="col-sm-5" style="margin-top: 7px;" type="file">
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 col-md-offset-1 control-label">company logo</label>
+                <input class="col-sm-5" style="margin-top: 7px;" type="file">
+            </div>
+            <!--company info end-->
+
+            <!--Business Details-->
+            <hr style="border: 1px dotted #808080">
+            <div class="row">
+                <p><h3>Business Details</h3>
+                <h5>
+                    <b>This information will be available to experts viewing your profile</b>
+                </h5>
+                </p>
+
+                <div class="row">
+                    <div class="col-sm-5 col-sm-offset-3">
+                        <textarea name="about" class="form-control test-input" maxlength="2000" rows="5" cols="60" placeholder="Provide additional business details"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr style="border: 2px solid #808080">
+            <div class="form-group">
+                <div class="col-sm-offset-3 col-sm-10">
+                    <button type="submit" class="btn btn-default col-sm-offset-1">Save Changes</button>
+                    <button type="submit" class="btn btn-default col-sm-offset-1">Cancel Changes</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+<!-- End profile -->
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-footer col-md-3 col-xs-6">
+                <h3>Successful Cases</h3>
+                <ul class="no-list-style footer-navigate-section">
+                    <li><a href="#">Student Manage System</a></li>
+                    <li><a href="#">Papers on Analysis of air</a></li>
+                    <li><a href="#">Advanced Agriculture</a></li>
+                    <li><a href="#">How to deal with ring of planes</a></li>
+                </ul>
+            </div>
+            <div class="col-footer col-md-3 col-xs-6">
+                <h3>Resource</h3>
+                <ul class="no-list-style footer-navigate-section">
+                    <li><a href="page-blog-posts.html">Company Introduced</a></li>
+                    <li><a href="page-portfolio-3-columns-2.html">Use Case</a></li>
+                    <li><a href="page-products-3-columns.html">Privacy Policy</a></li>
+                    <li><a href="page-faq.html">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="col-footer col-md-4 col-xs-6">
+                <h3>Contacts</h3>
+
+                <p class="contact-us-details">
+                    <b>Address:</b> wenhui Street, wuzhong, SuZhou, China<br/>
+                    <b>Phone:</b> +188 8888 8888<br/>
+                    <b>Fax:</b> +188 8888 8888<br/>
+                    <b>Email:</b> <a
+                        href="mailto:chengshuozhang@163.com">chengshuozhang@163.com</a>
+                </p>
+            </div>
+            <div class="col-footer col-md-2 col-xs-6">
+                <h3>Stay Connected</h3>
+                <ul class="footer-stay-connected no-list-style">
+                    <li><a href="#" class="wechat"></a></li>
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="QQ"></a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="footer-copyright">&copy; 2016 mPurpose. All rights reserved.ICP主体备案号： 苏ICP备15060798号</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Javascripts -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<script src="http://cdn.leafletjs.com/leaflet-0.5.1/leaflet.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<script src="js/jquery.sequence-min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/main-menu.js"></script>
+<script src="js/template.js"></script>
+
+</body>
+</html>
